@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:page_title) ?  yield(:page_title) : "Rails Blog" %> | Rails Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <!-- Latest compiled and minified CSS -->
+     <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+  </body>
+</html>

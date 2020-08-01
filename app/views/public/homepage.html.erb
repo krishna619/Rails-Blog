@@ -1,0 +1,38 @@
+<% content_for :page_title , "Home" %>
+<%= render partial: "layouts/footer" %>
+<%= render partial: "layouts/menu" %>
+</br>
+</br>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+.color-me{
+    color:white;
+}
+</style>
+
+
+
+
+<div class="col-4">
+<center>
+<p class="w3-xlarge">Total Number of Posts: <%= Post.total %> </p>
+</center>
+</div>
+</br>
+<% @posts.each do |post| %>
+	<%= render partial: "posts/post", locals: {post: post} %></p>
+<% end %>
+<div class ="footer">
+  <p>This Blog was Created by Krishna Chandhok with <span>&#10084;</span></p>
+  <p>
+  	© Copyright 2020, All Rights Reserved
+  </p>
+</div>

@@ -1,0 +1,26 @@
+body {
+	background-image: url("blog3.jpg");
+	/* Full height */
+  height: 120%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.w3-lobster {
+  font-family: "Lobster", serif;
+}
+.w3-lobster {
+  font-family: "Lobster", serif;
+}
+.navbar {
+	color: white;
+}

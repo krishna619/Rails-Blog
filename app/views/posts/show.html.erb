@@ -1,0 +1,42 @@
+
+<% content_for :page_title , "Blog Post" %>
+<p id="notice"><%= notice %></p>
+<%= @post.details %>
+  
+  </br>
+  </br>
+<p> Total entries for Posts: <%= Post.total %> </p>
+</br>
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+<p>
+	<small>
+	<%= post_meta @post %>
+	</small>
+<p>
+  <strong>Summary:</strong>
+  <%= @post.summary %>
+</p>
+
+
+  <strong>Body:</strong>
+  <%= simple_format @post.body %>
+
+<%= render partial: "posts/view_form", locals: {post: @post} %>
+
+<p>
+  <strong>Active:</strong>
+  <%= @post.active %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>   |
+<%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
+</br>
+<center>
+<a href="/">
+<button class="btn btn-success navbar-btn">Back To Homepage</button>
+</center>
