@@ -8,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-}
+
 .center {
   display: block;
   margin-left: auto;
@@ -21,6 +21,6 @@ body {
 .w3-lobster {
   font-family: "Lobster", serif;
 }
-.navbar {
-	color: white;
+.color-me{
+    color:white;
 }
