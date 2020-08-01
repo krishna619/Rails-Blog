@@ -14,7 +14,7 @@
  *= require_self
  *= require bootstrap
  */
-@import 'bootstrap/css/bootstrap';
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
 .navbar a {
   
   color: white;
