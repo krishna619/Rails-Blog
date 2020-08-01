@@ -14,7 +14,7 @@
  *= require_self
  *= require bootstrap
  */
-@import 'bootstrap/dist/css/bootstrap';
+@import 'bootstrap/css/bootstrap';
 .navbar a {
   
   color: white;
