@@ -15,7 +15,8 @@
  *= require bootstrap
  */
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
-.navbar a {
+
+.navbar a{
   
   color: white;
 
